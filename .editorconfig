@@ -1,0 +1,47 @@
+﻿[*]
+charset = utf-8
+end_of_line = crlf
+trim_trailing_whitespace = false
+insert_final_newline = false
+indent_style = space
+indent_size = 4
+max_line_length = 80
+
+[*.{fs,fsx,fsi}]
+fsharp_align_function_signature_to_indentation = false
+fsharp_alternative_long_member_definitions = true
+fsharp_array_or_list_multiline_formatter = number_of_items
+fsharp_bar_before_discriminated_union_declaration = false
+fsharp_blank_lines_around_nested_multiline_expressions = true
+fsharp_disable_elmish_syntax = false
+fsharp_indent_on_try_with = true
+fsharp_keep_if_then_in_same_line = false
+fsharp_keep_indent_in_branch = false
+fsharp_max_array_or_list_number_of_items = 3
+fsharp_max_array_or_list_width = 35
+fsharp_max_dot_get_expression_width = 40
+fsharp_max_elmish_width = 40
+fsharp_max_function_binding_width = 50
+fsharp_max_if_then_else_short_width = 30
+fsharp_max_infix_operator_expression = 50
+fsharp_max_record_number_of_items = 1
+fsharp_max_record_width = 60
+fsharp_max_value_binding_width = 80
+fsharp_multi_line_lambda_closing_newline = true
+fsharp_multiline_block_brackets_on_same_column = true
+fsharp_newline_between_type_definition_and_members = true
+fsharp_record_multiline_formatter = number_of_items
+fsharp_semicolon_at_end_of_line = false
+fsharp_single_argument_web_mode = true
+fsharp_space_after_comma = true
+fsharp_space_after_semicolon = true
+fsharp_space_around_delimiter = true
+fsharp_space_before_class_constructor = true
+fsharp_space_before_colon = true
+fsharp_space_before_lowercase_invocation = true
+fsharp_space_before_member = false
+fsharp_space_before_parameter = true
+fsharp_space_before_semicolon = true
+fsharp_space_before_uppercase_invocation = true
+fsharp_strict_mode = false
+fsharp_multiline_bracket_style = Aligned

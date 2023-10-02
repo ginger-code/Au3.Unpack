@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Prelude.fs"/>
+        <Compile Include="Collections\ByteStream.fs"/>
+        <Compile Include="Collections\BitStream.fs"/>
+        <Compile Include="Domain.fs" />
+        <Compile Include="PE.fs" />
+        <Compile Include="PRNG\LAME.fs" />
+        <Compile Include="EncryptionMethod.fs" />
+        <Compile Include="Decryption.fs" />
+        <Compile Include="Decompression.fs" />
+        <Content Include="Disassembly\LiteralData\functions" />
+        <Content Include="Disassembly\LiteralData\keywords" />
+        <Content Include="Disassembly\LiteralData\macros" />
+        <Compile Include="Disassembly\Disassembler.fs" />
+        <Compile Include="Scanning.fs" />
+        <Compile Include="IO.fs" />
+        <Compile Include="Unpack.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>$(AssemblyName).Tests</_Parameter1>
+        </AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FSharp.Data.LiteralProviders" Version="1.0.3" />
+      <PackageReference Include="FsToolkit.ErrorHandling" Version="4.9.0" />
+      <PackageReference Include="PeNet" Version="4.0.2" />
+    </ItemGroup>
+    
+</Project>
